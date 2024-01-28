@@ -1,0 +1,188 @@
+#root {
+  min-height: calc(100vh - 2rem);
+  max-width: 100%;
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  align-items: start;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  backdrop-filter: saturate(180%) blur(20px);
+  min-height: 70px;
+  width: 100%;
+  display: flex;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+main {
+  padding-top: 120px;
+  margin-top: -120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+h3.subtitle {
+  margin-bottom: 2rem;
+  max-width: 550px !important;
+  padding: 0 20px;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-video {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 200px 0;
+  box-shadow: 0 0.9rem 2rem 0 rgba(77, 47, 245, 0.2);
+}
+
+.main-content-column {
+  padding-top: 120px;
+  margin-top: -120px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px 0;
+}
+
+.product-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: 5rem auto 0;
+}
+
+.product-card {
+  flex-grow: 1;
+  margin: 10px;
+  padding: 50px;
+  border-radius: 10px;
+  border: 1px solid #f6f6f7;
+  background: #f6f6f7;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: rgba(142, 150, 170, 0.14);
+  font-size: 24px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+.pricing-card {
+  flex-grow: 1;
+  margin: 10px;
+  padding: 50px;
+  border-radius: 10px;
+  border: 1px solid #f6f6f7;
+  background: #f6f6f7;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card button {
+  width: 100%;
+  margin: 40px auto 0;
+}
+
+.pricing-card ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#waitlist {
+  margin-bottom: 40vh;
+}
+
+footer {
+  padding-top: 120px;
+  margin-top: -120px;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+  border-radius: 9px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 14px 12px;
+  height: 38px;
+}
+
+button:hover {
+  transition: all 0.075s ease 0s;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: 1px solid rgb(77, 47, 245);
+}
+
+button.primary {
+  border: 1px solid rgb(77, 47, 245);
+  background: rgb(77, 47, 245);
+  color: white;
+}
+
+button.primary:hover {
+  transition: all 0.075s ease 0s;
+  background: rgb(98, 72, 246);
+  color: white;
+}
+
+button.secondary {
+  background: transparent;
+  color: white;
+}
+
+button.hero-button {
+  font-size: 18px;
+  font-weight: 600;
+  height: 54px;
+  padding: 0 32px;
+}
