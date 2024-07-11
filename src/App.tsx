@@ -32,15 +32,21 @@ const productInfo = {
   pricingLeadText: "The quick brown fox jumps over the lazy dog",
   pricingPlans: [
     {
-      name: "Trial",
-      price: "Free",
+      name: "Free",
+      price: "$0",
       features: ["10 public maps", "no private maps"],
-      class: "primary",
+      class: "normal",
     },
     {
       name: "Pro",
       price: "$5",
       features: ["1,000 public maps", "20 private maps"],
+      class: "primary",
+    },
+    {
+      name: "Enterprise",
+      price: "$100",
+      features: ["10,000 public maps", "1,000 private maps", "SAML SSO", "Priority support"],
       class: "normal",
     },
   ],
@@ -75,7 +81,7 @@ function App() {
         >
           <a href="#product">Product</a>
           <a href="#pricing">Pricing</a>
-          <a href="#faq">FAQ</a>
+          <a href="#docs">Docs</a>
           <a href="#waitlist">
             <button className="primary">Join the waitlist</button>
           </a>
@@ -138,7 +144,7 @@ function App() {
           >
             {productInfo.pricingPlans.map((plan) => {
               return (
-                <div className="pricing-card">
+                <div className={`pricing-card ${plan.class}`}>
                   <h3>{plan.name}</h3>
                   <h2>{plan.price}</h2>
                   <ul>

@@ -107,11 +107,12 @@ a {
 }
 
 .pricing-card {
+  height: 300px;
   flex-grow: 1;
   margin: 10px;
   padding: 50px;
   border-radius: 10px;
-  border: 1px solid #f6f6f7;
+  border: 3px solid #f6f6f7;
   background: #f6f6f7;
   display: flex;
   flex-direction: column;
@@ -126,6 +127,14 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.pricing-card a {
+  margin-top: auto;
+}
+
+.pricing-card.primary {
+  border: 3px solid rgb(77, 47, 245);
 }
 
 #waitlist {
