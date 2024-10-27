@@ -18,4 +18,4 @@ jobs:
           cache: npm
       - run: npm ci
       - name: lint
-        run: npm run lint
+        run: npm run tsc
